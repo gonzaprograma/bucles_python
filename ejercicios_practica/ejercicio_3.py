@@ -15,4 +15,13 @@
 numeros = [1, 5, -1, 6, 10, 2, -5]
 suma = 0   # Variable ya inicializada, la suma arranca en cero
 
+print('los numeros incluidos en esta lista son:')
+for nuemro in numeros:
+    print (nuemro)
+
+print('la sumatoria de todos estos numeros es:')
+for numero in numeros:
+    suma += numero  
+    print("número = ", numero, "sumatoria =", suma)
+
 print("terminamos!, el resultado final almacenado en suma debe ser 18")

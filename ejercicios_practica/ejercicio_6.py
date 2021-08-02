@@ -16,12 +16,25 @@
 # Tener en cuenta que "range" no incluye el número de "fin" en su secuencia,
 # sino que va hasta el anterior
 
-inicio = int(input('Ingrese el primer número de la secuencia\n'))
-fin = int(input('Ingrese el último número de la secuencia\n'))
+inicio = int(input('Ingrese el primer número de la secuencia\n')) # -5
+fin = int(input('Ingrese el último número de la secuencia\n'))    #  5
 
 cantidad_numeros_positivos = 0  # Inicializo el contador en 0
+cantidad_numeros_negativos = 0
 
 # for ... in range(....)
+
+for i in range ((inicio), (fin)):
+    if i > 0:
+        cantidad_numeros_positivos += 1
+    elif i < 0:
+        cantidad_numeros_negativos += 1
+
+
+print ('la cantidad de numeros positivos es', cantidad_numeros_positivos)
+print ('la cantidad de numeros negativos es', cantidad_numeros_negativos)
+
+
 
 # Imprimir el valor de la cantidad de números positivos y negativos
 
